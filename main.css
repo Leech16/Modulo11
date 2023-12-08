@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Kalnia, sans-serif;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    color: aqua;
+    background-color: rgb(23, 45, 69);
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 100px;
+}
+
+header img{
+    max-width: 65px;
+}
+
+header .container {
+    width: 100%;
+}
+
+header a{ 
+    color: aqua;
+    margin-left: 8px ;
+    font-weight: bold;
+    font-size: 20px ;
+    }
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 120px;
+    text-align: center;
+    border-bottom: 2px solid rgb(23, 45, 69);
+    padding-bottom: 50px;
+}
+
+.Sobre h2{ 
+    margin-bottom: 30px;
+    margin-top: 40px;
+    color:rgb(23, 45, 69);
+    font-weight: 500;
+}
+
+.Sobre img{ 
+    max-width: 400px;
+}
+
+.borda{
+    border-top: 2px solid rgb(23, 45, 69);
+}
+
+.Lançamentos h2{
+    color: rgb(23, 45, 69);
+    margin-bottom: 50px;
+}
+
+.Produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2px;
+
+} 
+
+.Produto{
+    text-align: center;
+}
+
+.Produto h3{ 
+color: rgb(23, 45, 69);
+font-weight: 500px;
+}
+
+.Produto img{
+    max-width: 200px;
+}
+
+.Produto button{ 
+    background-color: rgb(23, 45, 69);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 80%;
+    margin-top: 25px;
+}
+.Produto button:hover{
+    background-color: rgb(19, 66, 116);
+}
+
+@media screen and (max-width:640px) { 
+    
+    .links{
+        display: flex;
+    }
+
+    header a{
+        font-size: 16px;
+    }
+
+    header img{
+        margin-right: 20px;
+    }
+    
+    .Sobre{
+        display: block;
+    }
+    .borda{
+        border: none;
+    }
+
+    .Produtos{
+        display: block;
+    }
+
+    .Produto{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    .Produtos{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Produto{
+        margin-bottom: 20px;
+    }
+}
